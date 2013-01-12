@@ -46,6 +46,10 @@ BOARD_EGL_CFG := device/samsung/manta/egl.cfg
 
 OVERRIDE_RS_DRIVER := libRSDriverArm.so
 
+# Kernel
+TARGET_KERNEL_SOURCE := kernel/samsung/manta
+TARGET_KERNEL_CONFIG := aokp_manta_defconfig
+
 #BOARD_USES_HGL := true
 #BOARD_USES_OVERLAY := true
 USE_OPENGL_RENDERER := true
