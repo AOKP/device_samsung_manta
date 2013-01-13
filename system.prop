@@ -1,0 +1,9 @@
+# system.prop for Manta
+#
+
+# Hardware Info
+ro.device.cpu=1.7 GHz dual-core Cortex A-15
+ro.device.gpu=Mali-T604
+ro.device.rear_cam=5 MP
+ro.device.front_cam=1.9 MP
+ro.device.screen_res=2560 x 1600
