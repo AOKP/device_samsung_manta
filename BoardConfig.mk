@@ -25,6 +25,9 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/manta/bluetooth
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/manta/BoardConfigVendor.mk
 
+TARGET_KERNEL_SOURCE = kernel/samsung/manta
+TARGET_KERNEL_CONFIG = manta_defconfig
+
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
