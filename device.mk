@@ -14,12 +14,6 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/samsung/manta/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
 PRODUCT_COPY_FILES := \
     $(LOCAL_KERNEL):kernel \
     device/samsung/manta/init.manta.rc:root/init.manta.rc \
