@@ -1,4 +1,5 @@
-# Copyright 2012 The Android Open Source Project
+#
+# Copyright 2013 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,13 +12,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+$(call inherit-product, device/samsung/manta/full_manta.mk)
 
-# Samsung/ARM blob(s) necessary for Manta hardware
-PRODUCT_PACKAGES := \
-    libGLES_mali \
-    libbccArm.sha1.so \
-    libbccArm.so \
-    libbcinfoArm.so \
-    libclcoreArm.bc \
-    libclcore_neonArm.bc \
-    libRSDriverArm.so
+PRODUCT_NAME := aosp_manta
