@@ -90,6 +90,15 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_UI_LIB := librecovery_ui_manta
 TARGET_RECOVERY_UPDATER_LIBS += librecovery_updater_manta
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/manta
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
+
+BOARD_HAS_NO_SELECT_BUTTON := true
+
+# Default card id for USB audio
+BOARD_USB_AUDIO_CARD_ID := 2
+
+# Support WebGL in WebKit
+ENABLE_WEBGL := true
 
 BOARD_SEPOLICY_DIRS := \
 	device/samsung/manta/sepolicy
@@ -107,5 +116,3 @@ BOARD_SEPOLICY_UNION := \
 	mediaserver.te \
 	surfaceflinger.te \
 	system.te
-
-ENABLE_WEBGL := true
