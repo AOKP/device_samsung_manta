@@ -115,3 +115,6 @@ BOARD_SEPOLICY_UNION := \
 	mediaserver.te \
 	surfaceflinger.te \
 	system.te
+
+# Flags
+COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
