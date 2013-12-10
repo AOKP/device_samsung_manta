@@ -165,6 +165,10 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.hwui.text_large_cache_height=1024 \
     ro.hwui.disable_scissor_opt=true
 
+# don't use /cache/dalvik-cache for now
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dexopt-data-only=1
+
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
