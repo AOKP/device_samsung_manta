@@ -40,6 +40,9 @@ COMMON_GLOBAL_CFLAGS += -D__ARM_USE_PLD -D__ARM_CACHE_LINE_SIZE=64
 TARGET_KERNEL_SOURCE = kernel/samsung/manta
 TARGET_KERNEL_CONFIG = cyanogenmod_manta_defconfig
 
+# Enable QC's libm optimizations
+TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
+
 #Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
